@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>form表单</title>
+  <style type="text/css">
+	input{
+	background-color:#ccffff;
+	border-bottom:5px solid:#660033}
+  </style>
+ </head>
+ <body>
+  <form method="get" action="1.html" id="myform">
+	用户名: <input type="text" name="username" size="10">
+	<br>
+	密  码：<input type="password" name="pwd"  size="10">
+	<br>
+	性别：<br>
+	男：<input type="radio" name="gender" value="male">
+	女：<input type="radio" name="gender" value="female">
+	<br>
+	爱好：<br>
+	学英语<input type="checkbox" name="E" value="英语">
+	学数学<input type="checkbox" name="M" value="数学">
+	学Web<input type="checkbox" name="W"  value="Web">
+	<br>
+    
+	毕业院校：
+	<select name="">
+	    <option value="请选择" selected>请选择</option>
+		<option value="河北工业大学">河北工业大学</option>
+		<option value="清华大学">清华大学</option>
+		<option value="北京大学">北京大学</option>
+	</select>
+	<br>
+	<input type="button" value="保 存" onclick="alert('hahahaha');myform.submit();">
+	<br>
+	<input type="submit" value="确定">
+  </form>
+ </body>
+</html>

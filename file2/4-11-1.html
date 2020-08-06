@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<script type="text/javascript">
+/*window.onload=abc;
+function abc()
+{
+//var obj=form1.bt1
+var obj=document.getElementById("bt1");
+obj.onclick=say;
+function say(){
+	          alert('别理我');
+              }
+}*/
+window.onload=function ()
+{
+var obj=document.getElementById("bt1");
+obj.onclick=function()
+                     {
+	                 // alert('别理我');
+					  var aDiv=document.createElement("div");
+					  aDiv.className="abc";
+					  aDiv.innerHTML="hello;"
+					  //document.body.appendChild(aDiv);
+					  document.getElementById("box").appendChild(aDiv);
+                     }
+}
+</script>
+
+<style type="text/css">
+.abc {
+	font-size: 14px;
+	color: #036;
+	height: 100px;
+	width: 100px;
+	border: thin solid #F00;
+	float:left;
+	background-color: #F3F;
+}
+
+.box {
+	background-color: #F3F;
+	height: 800px;
+	width: 800px;
+	border: medium solid #000;
+}
+</style>
+</head>
+
+<body>
+<form name="form" action="" method="get">
+<input id="bt1" name="bt1" type="button"` value="确定">
+<div id="box"></div>
+</form>
+
+
+
+</body>
+</html>

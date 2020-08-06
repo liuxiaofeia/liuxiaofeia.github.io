@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+#abc {
+	font-size: 12px;
+	float: left;
+	height: 100px;
+	width: 100px;
+	border: medium dotted #3F0;
+}
+</style>
+<script type="text/javascript">
+function aa(){
+	//表单用这种方法，表单以外用下面方法//var uname=document.myform.username.value;
+	var uname=document.getElementById("userid").value;
+	alert("您输入的用户名是:"+uname);
+		if(uname.length<6)
+	{
+		alert("用户名不能小于六位！");
+	}
+	else
+	{
+		document.myform.submit();
+    } 
+
+	
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="abc">2019-4-4上机</div>
+
+<form action="" method="get" name="myform">
+用户名：<input id=userid name="username" type="text"><br>
+密码：<input id=11 name="password1" type="password"><br>
+确认密码：<input id=22 name="password2" type="password"><br>
+<input name="" type="button" value="确认" onclick="aa()">
+</form>
+
+</body>
+</html>

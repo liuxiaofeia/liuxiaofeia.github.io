@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<script type="text/javascript">
+//var mydate=new Date();
+//mydate.getFullYear();
+
+var cat=new Object();//O大写
+cat.name="aaa";
+cat.color="white";
+cat.age="1";
+cat.say=function(){
+	alert("喵喵喵！！！");
+	}//需要通过事件绑定才能调用
+cat.say();
+
+//所有定义都用function
+function Cat(name,color)
+{
+	this.name=nam;
+	this.color=colr;
+	this.say=function()
+	{
+	alert("喵喵喵！！！我是"+cat.name+"我是"+cat.color+"色的");
+	}
+}
+    var cat1=new Cat("1","white");
+	cat1.say();
+    var cat2=new Cat("2","white");
+	cat2.say();
+</script>
+
+</head>
+
+<body>
+</body>
+</html>

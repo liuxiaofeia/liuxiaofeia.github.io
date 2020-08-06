@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+.before {
+	font-size: 12px;
+	color: #039;
+	background-color: #6CF;
+	height: 400px;
+	width: 400px;
+	border: thin solid #3F0;
+}
+.after {
+	font-size: 14px;
+	color: #F00;
+	background-color: #C0F;
+	height: 200px;
+	width: 200px;
+	border: medium solid #3C3;
+}
+
+</style>
+<script type="text/javascript">
+function change(){
+	var obj=document.getElementById('box');
+	//obj.style.color="red"
+	obj.className="after"}
+function back(){
+	var obj=document.getElementById('box');
+	obj.className="before"}
+
+</script>
+</head>
+
+<body>
+<div id="box" class="before" onmouseover="change()" onMouseOut="back()">此处显示  class "before" 的内容</div>
+</body>
+</html>
